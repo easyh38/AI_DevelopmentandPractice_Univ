@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>이지환의 홈페이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .site-header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        .nav a:hover {
+            color: #4dabf7;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+            scroll-margin-top: 80px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #4dabf7;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .card ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .card p {
+            margin-bottom: 12px;
+        }
+
+        .awards-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .awards-table th,
+        .awards-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .awards-table th {
+            background-color: #4dabf7;
+            color: #fff;
+        }
+
+        .awards-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #2c3e50;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">MY PAGE</h1>
+        <nav class="nav">
+            <a href="#about">자기소개</a>
+            <a href="#awards">수상실적</a>
+            <a href="#club">동아리소개</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about" class="section">
+            <h2>자기소개</h2>
+            <div class="card">
+                <p>안녕하세요! 저는 웹 개발에 관심이 많은 1년차 웹 개발자 <strong>이지환</strong>입니다.</p>
+                <ul>
+                    <li>이름: 이지환</li>
+                    <li>전공: 컴퓨터공학</li>
+                    <li>관심 분야: 프론트엔드, UI/UX, 데이터 시각화</li>
+                    <li>이메일: example@email.com</li>
+                </ul>
+                <p>새로운 기술을 배우는 것을 즐기며, 사용자 중심의 서비스를 만드는 것을 목표로 하고 있습니다.</p>
+            </div>
+        </section>
+
+        <section id="awards" class="section alt">
+            <h2>수상실적</h2>
+            <div class="card">
+                <table class="awards-table">
+                    <thead>
+                        <tr>
+                            <th>연도</th>
+                            <th>수상명</th>
+                            <th>주최</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024</td>
+                            <td>대학생 해커톤 대상</td>
+                            <td>OO대학교</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>프로그래밍 경진대회 우수상</td>
+                            <td>OO협회</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>졸업작품 전시회 최우수상</td>
+                            <td>OO학과</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="club" class="section">
+            <h2>동아리소개</h2>
+            <div class="card">
+                <h3>웹 개발 동아리 "코드위버"</h3>
+                <p>웹 기술을 함께 공부하고 프로젝트를 진행하는 동아리입니다.</p>
+                <ul>
+                    <li>활동 기간: 2022 ~ 현재</li>
+                    <li>주요 활동: 스터디, 팀 프로젝트, 공모전 참가</li>
+                    <li>담당 역할: 프론트엔드 파트장</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 홍길동. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
